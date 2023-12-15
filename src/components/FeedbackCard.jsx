@@ -8,13 +8,14 @@ export const FeedbackCard = ({content, name, title, img}) => {
         src={quotes}
         alt="double-qoutes"
         className="w-[42px] h-[27px] object-contain"
+        loading="lazy"
       />
       <p className="font-poppins font-normal text-[18px] leading-[32px] text-white my-10 ">
         {content}
       </p>
 
       <figure className="flex flex-row">
-        <img src={img} alt={name} className="w-[48px] h-[48px] rounded-full mr-3" />
+        <img src={img} alt={name} className="w-[48px] h-[48px] rounded-full mr-3" loading="lazy" />
         <figcaption>
           <h4 className="font-poppins font-semibold text-[20px] leading-[32px] text-white">
             {name}
